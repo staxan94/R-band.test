@@ -1,27 +1,30 @@
 @font-face {
-    font-family: 'MyriadProBold';
-    src: url('/fonts/MyriadPro-Bold.eot');
-    url('/fonts/MyriadPro-Bold.woff') format('woff'),
-    url('/fonts/MyriadPro-Bold.ttf') format('truetype'),
-    url('/fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
     font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'MyriadPro';
-    src: url('/fonts/MyriadPro-Regular.eot');
-    src: url('/fonts/MyriadPro-Regular.eot') format('embedded-opentype'),
-    url('/fonts/MyriadPro-Regular.woff') format('woff'),
-    url('/fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
-
 @font-face {
-    font-family: 'MyriadProSemibold';
-    src: url('/fonts/MyriadPro-Semibold.eot');
-    src: url('/fonts/MyriadPro-Semibold.eot') format('embedded-opentype'),
-    url('/fonts/MyriadPro-Semibold.woff') format('woff'),
-    url('/fonts/MyriadPro-Semibold.ttf') format('truetype');
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 * {
@@ -531,7 +534,7 @@ footer  .contact-box > * {
     height: 20px;
     display: inline-block !important;
     margin-right: 0px;
-    position: relative;
+    position: relative
 }
 
 .socseti a:not(:last-child) {margin-right: 20px;}
@@ -550,8 +553,6 @@ footer  .contact-box > * {
 .socseti a:nth-child(3){background: url("/images/footer-inst.png") no-repeat scroll center center / auto auto transparent;}
 
 .socseti a:hover {opacity: 0.7;}
-
-/*----------------------------------*****-----------------------------------*/
 
 /*-----------------------------------ОБЩИЕ----------------------------------*/
 
@@ -619,9 +620,9 @@ div, a, section, form, input, textarea, button, header, main {
 #share42 > a:not(:nth-child(3)) {margin: 0px 25px 0px 0px !important;}
 #share42 > a:hover {opacity: 0.7;}
 
-#share42 > a:nth-child(1) {background: url("/img/vk_icon-icons.com_66681 (1).png") no-repeat scroll center top transparent !important;}
-#share42 > a:nth-child(2) {background: url("/img/facebook_icon-icons.com_66092.png") no-repeat scroll center top transparent !important;}
-#share42 > a:nth-child(3) {background: url("/img/twitter_2_icon-icons.com_59206.png") no-repeat scroll center top transparent !important;}
+#share42 > a:nth-child(1) {background: url("/img/vk-f.png") no-repeat scroll center top transparent !important;}
+#share42 > a:nth-child(2) {background: url("/img/fb-f.png") no-repeat scroll center top transparent !important;}
+#share42 > a:nth-child(3) {background: url("/img/ok-f.png") no-repeat scroll center top transparent !important;}
 
 a[title=""]  {pointer-events: none;}
 
