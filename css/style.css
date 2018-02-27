@@ -1,0 +1,762 @@
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('/fonts/MyriadPro-Bold.eot');
+    url('/fonts/MyriadPro-Bold.woff') format('woff'),
+    url('/fonts/MyriadPro-Bold.ttf') format('truetype'),
+    url('/fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('/fonts/MyriadPro-Regular.eot');
+    src: url('/fonts/MyriadPro-Regular.eot') format('embedded-opentype'),
+    url('/fonts/MyriadPro-Regular.woff') format('woff'),
+    url('/fonts/MyriadPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('/fonts/MyriadPro-Semibold.eot');
+    src: url('/fonts/MyriadPro-Semibold.eot') format('embedded-opentype'),
+    url('/fonts/MyriadPro-Semibold.woff') format('woff'),
+    url('/fonts/MyriadPro-Semibold.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+body {
+    font-family: sans-serif, 'MyriadPro';
+    margin: 0;
+    padding: 0;
+}
+
+/*=================================*/
+/*==========PORTFOLIO==============*/
+
+.jumbo-description {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.jumbo-description h1 {
+    font-weight: 800;
+    font-size: 2.5em;
+    font-family: 'MyriadProBold', sans-serif;
+}
+
+.jumbo-description p {
+    text-align: center;
+    padding-left: 5px;
+    font-size: 1.8em;
+}
+
+.container {
+    width: 78%;
+    min-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.description {
+    background-color: #eee;
+    padding: 30px 0 30px 0;
+}
+
+.description .container {
+    flex-direction: column;
+}
+
+.description h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.description p {
+    padding-bottom: 15px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.button-project:hover {
+    background-color: #9FCB24;
+}
+
+section.plates {
+    width: 100%;
+    height: auto;
+}
+
+section .plate {
+    height: 500px;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.plate {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.plate:hover .slide {
+    background-color: white;
+}
+
+.plate:hover h1 {
+    color: black;
+}
+
+.plate:hover .slide p {
+    color:rgba(20,20,20, .8);
+}
+
+.plate:hover .slide .button-project {
+    display: flex;
+}
+
+.slide {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 60%;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 30px;
+    overflow: hidden;
+}
+
+.plate h1 {
+    position: absolute;
+    top: 40px;
+    left: 65%;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    line-height: 1.3;
+    font-weight: 800;
+    font-family: Tahoma, Verdana, sans-serif;
+    color: white;
+    z-index: 10;
+}
+
+.slide p {
+    font-size: 1.0em;
+    line-height: 1.4;
+    padding-bottom: 100px;
+    margin-top: auto;
+    color: transparent;
+    -webkit-transition: display .1s ease;
+    -moz-transition: display .1s ease;
+    -ms-transition: display .1s ease;
+    -o-transition: display .1s ease;
+    transition: display .1s ease;
+}
+
+.slide .button-project {
+    background: none repeat scroll 0% 0% #7FBA24;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    line-height: 19px;
+    font-family: 'MyriadProSemibold', sans-serif;
+    font-size: 14px;
+    padding: 10px 28px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: pre-wrap;
+    display: none;
+}
+
+/*=================================================*/
+
+/*-----------------------***************************------------------------*/
+
+/*-----------------------------------ХЕДЕР----------------------------------*/
+
+header {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    background: transparent;
+    font-size: 0px;
+}
+
+header.subscroll {
+    position: fixed;
+    z-index: 2050;
+    background-color: #EAEAEA;
+    top: 0px;
+    left: 0px;
+    height: auto;
+    max-height: 0px;
+    transition: max-height 0.3s;
+    -webkit-transition: max-height 0.3s;
+    -moz-transition: max-height 0.3s;
+    -o-transition: max-height 0.3s;
+    -ms-transition: max-height 0.3s;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+header.subscroll .address {display: none !important;}
+body.common-home header.subscroll .menu-item {line-height: 45px !important;}
+header.subscroll.show {overflow: visible;}
+header.subscroll.show {max-height: 150px;}
+/*header.subscroll .upper-header {display: none !important;}*/
+body.common-home header.subscroll .lower-header .lower-header-holder * {color: #393939;}
+body.common-home header.subscroll .lower-header .lower-header-holder .menu-item:hover {color: #92B939;}
+header.subscroll .lower-header {background-color: #EAEAEA !important;}
+
+
+.common-home .lower-header-holder .vertical {min-height: 63px !important;}
+.lower-header-holder .vertical {min-height: 37px !important;}
+
+header .upper-header {
+    display: block;
+    width: 1070px;
+    margin: 0 auto;
+    padding: 7px 0px;
+    text-align: justify;
+    -ms-text-justify: inter-ideograph;
+}
+
+header .upper-header .pre-holder  {
+    height: 100%;
+}
+
+header .upper-header .pre-holder > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .upper-header .logo:not(.item-2) {
+    margin-bottom: 4px;
+}
+
+.header-deliver {
+    width: 2px;
+    height: 67px;
+    background: #000;
+    margin: 0px 8px;
+}
+
+header .upper-header .partner {
+    width: 136px;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 12px;
+    font-family: 'MyriadProBold';
+    text-align: left;
+    /*margin-right: 30px;*/
+}
+
+header .upper-header .menu-item {
+    font-size: 17px;
+    color: #393939;
+    font-family: 'MyriadProSemibold';
+}
+
+header .upper-header .menu-item.active {color: #7FBA24;}
+
+header .upper-header .menu-item:not(:nth-of-type(5)){
+    /*margin-right: 30px;*/
+}
+
+header .upper-header .menu-item:hover {
+    color: #7fb231;
+}
+
+header .button-project {
+    background: none repeat scroll 0% 0% #7FBA24;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 19px;
+    font-family: "MyriadProSemibold";
+    font-size: 18px;
+    padding: 10px 28px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*white-space: pre-wrap;*/
+}
+
+header .button-project:hover {
+    background: #97d03f;
+}
+
+header .upper-header .phone {
+    font-family: "MyriadPro";
+    color: #7FBA24;
+    font-size: 29px;
+    font-family: 'MyriadProBold';
+    /*display: none;*/
+}
+
+/*.common-home header .upper-header .phone {display: inline-block;}*/
+
+header .upper-header > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .lower-header {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #eaeaea;
+}
+
+.common-home header .lower-header {
+    background: transparent;
+}
+
+header .lower-header .lower-header-holder {
+    width: 1070px;
+    margin: 0 auto;
+    display: block;
+    text-align: justify;
+    -ms-text-justify: inter-ideograph;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+header .lower-header .lower-header-holder > * {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+header .lower-header .lower-header-holder .address {
+    line-height: 21px;
+    color: #fff;
+    height: 55px;
+    padding-top: 8px;
+    width: 175px;
+    font-size: 17px;
+    display: none;
+}
+
+.common-home header .lower-header .lower-header-holder .address {
+    display: inline-block;
+}
+
+header .lower-header .lower-header-holder .menu-item {
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'MyriadProBold';
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.common-home header .lower-header .lower-header-holder .menu-item {
+    line-height: 20px;
+    color: #fff;
+    white-space: pre-wrap;
+}
+
+header .lower-header .lower-header-holder .menu-item:hover,
+header .lower-header .lower-header-holder .menu-item.active {
+    color: #7fb231;
+}
+
+/*-----------------------------------*****----------------------------------*/
+
+/*----------------------------------ФУТЕР-----------------------------------*/
+
+footer {
+    display: block;
+    width: 100%;
+    min-height: 275px;
+    position: relative;
+    z-index: 100;
+}
+
+footer .footer-contacts {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    height: 0px;
+    overflow: visible;
+}
+
+footer .footer-contacts .contacts {
+    position: absolute;
+    width: 390px;
+    height: 250px;
+    bottom: 0px;
+    left: 0px;
+    background: #7fba24;
+    color: #fff;
+    text-align: left;
+    overflow: visible;
+    font-size: 0px;
+    padding: 18px 30px;
+}
+
+footer #map {
+    width: 100%;
+    height: 420px;
+    display: block;
+}
+
+footer img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer .pre-holder {
+    width: 100%;
+    display: block;
+}
+
+footer .pre-holder > * {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+footer .pre-holder .footer-logo {
+    padding-bottom: 5px;
+}
+
+footer .pre-holder .splitter {
+    height: 40px;
+    width: 2px;
+    background: #fff;
+    margin: 0px 7px;
+}
+
+footer .pre-holder .partner {
+    width: 136px;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 12px;
+    font-family: 'MyriadProBold';
+    text-align: left;
+    /*margin-right: 30px;*/
+}
+
+footer .contact-info {
+    font-size: 16px;
+    margin: 10px 0px 11px 0px;
+}
+
+footer .contact-info * {
+    white-space: pre-wrap;
+    line-height: 21px;
+}
+
+footer .contact-info :last-child {
+    margin-top: 5px;
+}
+
+footer  .copyright {vertical-align: middle; white-space: pre-wrap; width: 100%;}
+
+footer  .copyright,
+footer  .copyright * {
+    font-size: 12px;
+    display: inline-block;
+    line-height: 17px;
+    text-align: left;
+}
+
+footer  .copyright a{text-decoration: underline;}
+footer  .copyright a:hover{opacity: 0.7;}
+
+footer  .contact-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 0px 0px 40px;
+    text-align: left;
+}
+
+footer  .contact-box > a:first-of-type {
+    margin-bottom: 7px;
+}
+
+footer  .contact-box > * {
+    display: block;
+    font-size: 17px;
+}
+
+.socseti {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0px 18px;
+}
+
+.socseti a {
+    width: 20px;
+    height: 20px;
+    display: inline-block !important;
+    margin-right: 0px;
+    position: relative;
+}
+
+.socseti a:not(:last-child) {margin-right: 20px;}
+.socseti a:not(:last-child):after {
+    content: "";
+    display: block;
+    position: absolute;
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -11px;
+    width: 2px;
+    height: 23px;
+    background: #fff;
+}
+.socseti a:nth-child(3){background: url("/images/footer-inst.png") no-repeat scroll center center / auto auto transparent;}
+
+.socseti a:hover {opacity: 0.7;}
+
+/*----------------------------------*****-----------------------------------*/
+
+/*-----------------------------------ОБЩИЕ----------------------------------*/
+
+main {display: block;}
+.common-home main {
+    margin-top: -64px;
+}
+
+div, a, section, form, input, textarea, button, header, main {
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.justify {
+    width: 100%;
+    height: 0px;
+    display: inline-block;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 0px !important;
+}
+
+.vertical{
+    height: 100%;
+    width: 0px;
+    display: inline-block;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.owl-item {cursor: grab;}
+
+.tell-friends {
+    text-align: center;
+    margin: 45px 0px 45px;
+}
+
+.share42init {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle !important;
+}
+
+#share42 {display: inline-block;}
+
+#share42 a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.tell-friends h3 {
+    text-align: center;
+    text-transform: none !important;
+    color: #7fba24 !important;
+    font-size: 22px !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 23px 6px 0px  !important;
+}
+
+#share42 > a {margin: 0 !important;}
+#share42 > a:last-child {display: none !important;}
+#share42 > a:not(:nth-child(3)) {margin: 0px 25px 0px 0px !important;}
+#share42 > a:hover {opacity: 0.7;}
+
+#share42 > a:nth-child(1) {background: url("/img/vk_icon-icons.com_66681 (1).png") no-repeat scroll center top transparent !important;}
+#share42 > a:nth-child(2) {background: url("/img/facebook_icon-icons.com_66092.png") no-repeat scroll center top transparent !important;}
+#share42 > a:nth-child(3) {background: url("/img/twitter_2_icon-icons.com_59206.png") no-repeat scroll center top transparent !important;}
+
+a[title=""]  {pointer-events: none;}
+
+/*-----------------------------------*****----------------------------------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+}
+
+body.common-home {
+    background-image: url("/images/background.jpg");
+    background-position: center top;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+body.emptyheader {padding-top: 105px;}
+body.common-home.emptyheader {padding-top: 123px;}
+
+input, textarea, button {
+    font-family: 'MyriadPro';
+    font-size: 19px;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-weight: normal;
+    font-family: 'MyriadProBold';
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*==============================================*/
+
+@media only screen and (min-width : 990px) and (max-width : 1130px)  {
+
+    .plate h1 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width : 990px)  {
+
+    .plate h1 {
+        font-size: 1.8em;
+    }
+
+}
+
+
+
+
