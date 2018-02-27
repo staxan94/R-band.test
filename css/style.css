@@ -550,7 +550,7 @@ footer  .contact-box > * {
     height: 23px;
     background: #fff;
 }
-.socseti a:nth-child(3){background: url("/images/footer-inst.png") no-repeat scroll center center / auto auto transparent;}
+.socseti a:nth-child(3){background: url("../img/footer-inst.png") no-repeat scroll center center / auto auto transparent;}
 
 .socseti a:hover {opacity: 0.7;}
 
@@ -695,7 +695,6 @@ td {
 }
 
 body.common-home {
-    background-image: url("/images/background.jpg");
     background-position: center top;
     background-size: auto auto;
     background-repeat: no-repeat;
