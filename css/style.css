@@ -45,49 +45,42 @@ body {
     padding: 0;
 }
 
-/*=================================*/
-/*==========PORTFOLIO==============*/
+/* PORTFOLIO
+/* ==============================================*/
 
-.jumbo-description {
+.description-top {
     width: 100%;
     height: 400px;
-    background-position: center;
+    background: url(../img/img-description.jpg) center;
     -webkit-background-size: cover;
     background-size: cover;
     padding-top: 120px;
     color: #fff;
+    text-align: center;
 }
 
-.jumbo-description h1 {
+.description-top h1 {
     font-weight: 800;
-    font-size: 2.5em;
+    height: 60px;
+    font-size: 38px;
     font-family: 'MyriadProBold', sans-serif;
+    margin-top: 50px;
 }
 
-.jumbo-description p {
-    text-align: center;
+.description-top p {
     padding-left: 5px;
-    font-size: 1.8em;
-}
-
-.container {
-    width: 78%;
-    min-height: 50px;
+    font-size: 24px;
+    width: 940px;
     margin: 0 auto;
-    text-align: center;
-    display: flex;
 }
 
-.description {
+.description-bottom {
     background-color: #eee;
     padding: 30px 0 30px 0;
+    text-align: center;
 }
 
-.description .container {
-    flex-direction: column;
-}
-
-.description h4 {
+.description-bottom h4 {
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
@@ -95,19 +88,24 @@ body {
     padding-bottom: 10px;
 }
 
-.description p {
+.description-bottom p {
     padding-bottom: 15px;
-    text-align: center;
     line-height: 1.4;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.button-project:hover {
-    background-color: #9FCB24;
-}
+
+
+
+/* ПЛИТКА
+======================================================*/
 
 section.plates {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section .plate {
@@ -116,14 +114,13 @@ section .plate {
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
+    flex: 1 1 50%;
 }
 
-.plate {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-}
+.plate:nth-of-type(1) {background-image:url(../img/portfolio-img-1.jpg);}
+.plate:nth-of-type(2) {background-image:url(../img/portfolio-img-2.jpg);}
+.plate:nth-of-type(3) {background-image:url(../img/portfolio-img-3.jpg);}
+.plate:nth-of-type(4) {background-image:url(../img/portfolio-img-4.jpg);}
 
 .plate:hover .slide {
     background-color: white;
@@ -204,7 +201,6 @@ section .plate {
 
 /*=================================================*/
 
-/*-----------------------***************************------------------------*/
 
 /*-----------------------------------ХЕДЕР----------------------------------*/
 
@@ -738,8 +734,8 @@ a {
     text-decoration: none;
 }
 
-
-/*==============================================*/
+/* MEDIA
+============================================*/
 
 @media only screen and (min-width : 990px) and (max-width : 1130px)  {
 
@@ -757,6 +753,13 @@ a {
 
 }
 
+@media all and (max-width: 990px) {
+
+    section .plate {
+        flex: 1 1 100%;
+    }
+
+}
 
 
 
