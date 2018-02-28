@@ -160,7 +160,7 @@ section .plate {
     text-transform: uppercase;
     line-height: 1.3;
     font-weight: 800;
-    font-family: Tahoma, Verdana, sans-serif;
+    font-family: 'MyriadProBold', sans-serif;
     color: white;
     z-index: 10;
 }
@@ -168,8 +168,8 @@ section .plate {
 .slide p {
     font-size: 1.0em;
     line-height: 1.4;
-    padding-bottom: 100px;
-    margin-top: auto;
+    /*padding-bottom: 100px;*/
+    margin-top: 130px;
     color: transparent;
     -webkit-transition: display .1s ease;
     -moz-transition: display .1s ease;
@@ -179,7 +179,7 @@ section .plate {
 }
 
 .slide .button-project {
-    background: none repeat scroll 0% 0% #7FBA24;
+    background: none repeat scroll 0 0 #7FBA24;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -197,6 +197,7 @@ section .plate {
     user-select: none;
     white-space: pre-wrap;
     display: none;
+    margin-top: auto;
 }
 
 /*=================================================*/
@@ -210,17 +211,17 @@ header {
     position: relative;
     z-index: 100;
     background: transparent;
-    font-size: 0px;
+    font-size:0;
 }
 
 header.subscroll {
     position: fixed;
     z-index: 2050;
     background-color: #EAEAEA;
-    top: 0px;
-    left: 0px;
+    top:0;
+    left:0;
     height: auto;
-    max-height: 0px;
+    max-height:0;
     transition: max-height 0.3s;
     -webkit-transition: max-height 0.3s;
     -moz-transition: max-height 0.3s;
@@ -247,7 +248,7 @@ header .upper-header {
     display: block;
     width: 1070px;
     margin: 0 auto;
-    padding: 7px 0px;
+    padding: 7px 0;
     text-align: justify;
     -ms-text-justify: inter-ideograph;
 }
@@ -269,7 +270,7 @@ header .upper-header .logo:not(.item-2) {
     width: 2px;
     height: 67px;
     background: #000;
-    margin: 0px 8px;
+    margin:0 8px;
 }
 
 header .upper-header .partner {
@@ -303,14 +304,13 @@ header .button-project {
     text-transform: uppercase;
     text-align: center;
     line-height: 19px;
-    font-family: "MyriadProSemibold";
+    font-family: "MyriadProSemibold", sans-serif;
     font-size: 18px;
     padding: 10px 28px 10px;
     cursor: pointer;
     font-weight: bold;
     color: #fff;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -322,10 +322,9 @@ header .button-project:hover {
 }
 
 header .upper-header .phone {
-    font-family: "MyriadPro";
     color: #7FBA24;
     font-size: 29px;
-    font-family: 'MyriadProBold';
+    font-family: 'MyriadProBold', sans-serif;
     /*display: none;*/
 }
 
@@ -353,8 +352,8 @@ header .lower-header .lower-header-holder {
     display: block;
     text-align: justify;
     -ms-text-justify: inter-ideograph;
-    font-size: 0px;
-    line-height: 0px;
+    font-size:0;
+    line-height:0;
 }
 
 header .lower-header .lower-header-holder > * {
@@ -378,10 +377,9 @@ header .lower-header .lower-header-holder .address {
 }
 
 header .lower-header .lower-header-holder .menu-item {
-    line-height: 21px;
     text-transform: uppercase;
     color: #000;
-    font-family: 'MyriadProBold';
+    font-family: 'MyriadProBold', sans-serif;
     line-height: 40px;
     white-space: nowrap;
     font-size: 16px;
@@ -414,7 +412,7 @@ footer .footer-contacts {
     width: 1000px;
     margin: 0 auto;
     position: relative;
-    height: 0px;
+    height:0;
     overflow: visible;
 }
 
@@ -422,13 +420,13 @@ footer .footer-contacts .contacts {
     position: absolute;
     width: 390px;
     height: 250px;
-    bottom: 0px;
-    left: 0px;
+    bottom:0;
+    left:0;
     background: #7fba24;
     color: #fff;
     text-align: left;
     overflow: visible;
-    font-size: 0px;
+    font-size:0;
     padding: 18px 30px;
 }
 
@@ -462,7 +460,7 @@ footer .pre-holder .splitter {
     height: 40px;
     width: 2px;
     background: #fff;
-    margin: 0px 7px;
+    margin:0 7px;
 }
 
 footer .pre-holder .partner {
@@ -477,7 +475,7 @@ footer .pre-holder .partner {
 
 footer .contact-info {
     font-size: 16px;
-    margin: 10px 0px 11px 0px;
+    margin: 10px 0 11px 0;
 }
 
 footer .contact-info * {
@@ -505,7 +503,7 @@ footer  .copyright a:hover{opacity: 0.7;}
 footer  .contact-box {
     display: inline-block;
     vertical-align: middle;
-    margin: 0px 0px 0px 40px;
+    margin: 0 0 0 40px;
     text-align: left;
 }
 
@@ -522,14 +520,14 @@ footer  .contact-box > * {
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    margin: 10px 0px 18px;
+    margin: 10px 0 18px;
 }
 
 .socseti a {
     width: 20px;
     height: 20px;
     display: inline-block !important;
-    margin-right: 0px;
+    margin-right:0;
     position: relative
 }
 
@@ -565,26 +563,26 @@ div, a, section, form, input, textarea, button, header, main {
 
 .justify {
     width: 100%;
-    height: 0px;
+    height:0;
     display: inline-block;
-    margin: 0px !important;
-    padding: 0px !important;
-    border: 0px !important;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
 }
 
 .vertical{
     height: 100%;
-    width: 0px;
+    width:0;
     display: inline-block;
-    margin: 0px !important;
-    padding: 0px !important;
+    margin:0 !important;
+    padding:0 !important;
 }
 
 .owl-item {cursor: grab;}
 
 .tell-friends {
     text-align: center;
-    margin: 45px 0px 45px;
+    margin: 45px 0 45px;
 }
 
 .share42init {
@@ -608,12 +606,12 @@ div, a, section, form, input, textarea, button, header, main {
     font-size: 22px !important;
     display: inline-block;
     vertical-align: middle;
-    margin: 0px 23px 6px 0px  !important;
+    margin:0 23px 6px 0  !important;
 }
 
 #share42 > a {margin: 0 !important;}
 #share42 > a:last-child {display: none !important;}
-#share42 > a:not(:nth-child(3)) {margin: 0px 25px 0px 0px !important;}
+#share42 > a:not(:nth-child(3)) {margin:0 25px 0 0 !important;}
 #share42 > a:hover {opacity: 0.7;}
 
 #share42 > a:nth-child(1) {background: url("/img/vk-f.png") no-repeat scroll center top transparent !important;}
@@ -691,6 +689,7 @@ td {
 }
 
 body.common-home {
+    background-image: url(../img/background.jpg);
     background-position: center top;
     background-size: auto auto;
     background-repeat: no-repeat;
