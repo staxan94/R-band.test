@@ -45,6 +45,7 @@ body {
     padding: 0;
 }
 
+
 /* PORTFOLIO
 /* ==============================================*/
 
@@ -117,6 +118,17 @@ section .plate {
     flex: 1 1 50%;
 }
 
+section .plate::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(125,74,74,.9);
+    opacity: .3;
+}
+
 .plate:nth-of-type(1) {background-image:url(../img/portfolio-img-1.jpg);}
 .plate:nth-of-type(2) {background-image:url(../img/portfolio-img-2.jpg);}
 .plate:nth-of-type(3) {background-image:url(../img/portfolio-img-3.jpg);}
@@ -134,16 +146,20 @@ section .plate {
     color:rgba(20,20,20, .8);
 }
 
-.plate:hover .slide .button-project {
-    display: flex;
+.plate:hover .slide .slide-btn {
+    display: block;
+}
+
+.plate:hover::after {
+    opacity: 0;
 }
 
 .slide {
     position: absolute;
-    width: 40%;
+    width: 50%;
     height: 100%;
     top: 0;
-    left: 60%;
+    left: 50%;
     background-color: transparent;
     color: black;
     display: flex;
@@ -155,7 +171,7 @@ section .plate {
 .plate h1 {
     position: absolute;
     top: 40px;
-    left: 65%;
+    left: 55%;
     font-size: 1.8em;
     text-transform: uppercase;
     line-height: 1.3;
@@ -178,7 +194,8 @@ section .plate {
     transition: display .1s ease;
 }
 
-.slide .button-project {
+.slide .slide-btn {
+    width: 75%;
     background: none repeat scroll 0 0 #7FBA24;
     text-transform: uppercase;
     text-align: center;
@@ -190,12 +207,6 @@ section .plate {
     cursor: pointer;
     font-weight: bold;
     color: #fff;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    white-space: pre-wrap;
     display: none;
     margin-top: auto;
 }
@@ -300,6 +311,7 @@ header .upper-header .menu-item:hover {
 }
 
 header .button-project {
+    width: 140px;
     background: none repeat scroll 0% 0% #7FBA24;
     text-transform: uppercase;
     text-align: center;
@@ -314,7 +326,7 @@ header .button-project {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    /*white-space: pre-wrap;*/
+    white-space: normal;
 }
 
 header .button-project:hover {
@@ -340,10 +352,6 @@ header .lower-header {
     position: relative;
     width: 100%;
     background: #eaeaea;
-}
-
-.common-home header .lower-header {
-    background: transparent;
 }
 
 header .lower-header .lower-header-holder {
